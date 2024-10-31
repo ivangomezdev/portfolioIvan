@@ -1,0 +1,156 @@
+.form__box {
+    display: flex;
+    background-color: #13171C;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+input{
+    color: white;
+    font-weight: bold;
+}
+
+.inputLabel__cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 250px;
+    gap: 5px;
+    font-size: 18px;
+    margin-left: 20px;
+    color: #eeeeee;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 27px;
+
+}
+
+
+.inputLabel__cont input {
+    border-radius: 5px;
+    height: 35px;
+    border: none;
+    background-color: #393e46;
+    border: solid 1px rgba(128, 128, 128, 0) transparent !important;
+}
+
+.inputLabel__cont input::placeholder {
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.inputLabel__message textarea {
+    
+    background-color: #393e46;
+    border: none;
+    border-radius: 5px;
+    height: 150px;
+
+}
+
+.inputLabel__message{
+    display: flex;
+    color: #eeeeee;
+    margin-left: 20px;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 27px;
+
+}
+
+.form__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    /* Espacio entre el texto y la imagen */
+    padding: 10px 20px;
+   
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #00ADB5;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-weight: 700;
+    line-height: 27px;
+   
+}
+
+.form__button:hover{
+    background-color:#00acb56d; ;
+}
+
+/* MOBILE FLEX COLUMN FORM*/
+@media (max-width: 960px){
+    .form__box{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .form__box h1{
+        font-size: 35px !important;
+    }
+
+    .inputLabel__message textarea {
+    width: 249px;
+    
+    
+    }
+
+    .form__button{
+        width: 249px;
+    }
+    }
+
+/* template PC*/
+@media (min-width: 960px) {
+
+    .form__cont {
+        display: grid;
+        width: 500px;
+
+
+    }
+
+    .form__responsive {
+        display: flex;
+    }
+
+
+    .inputLabel__message {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 15px;
+        gap: 5px;
+        font-size: 18px;
+        margin-left: 20px;
+        color: #eeeeee;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .inputLabel__message textarea {
+        height: 200px !important;
+        background-color: #393e46;
+        border: none;
+        border-radius: 14px;
+
+
+    }
+
+    .form__button {
+       
+        /* Espacio entre el texto y la imagen */
+      
+        cursor: pointer;
+        height: 40px;  
+        font-size: 14px;
+        font-family: "poppins";
+    }
+    
+}
