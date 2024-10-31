@@ -1,0 +1,155 @@
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.intro__box {
+    background-color: #13171C;
+    display: flex;
+    margin: 0px;
+    text-align: left;
+    justify-content: space-around;
+    padding: 100px;
+
+}
+
+.intro__imgBox {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: -60px;
+
+}
+
+.intro__box h1 {
+    font-size: 96px;
+    line-height: 1;
+    /* Opcional: Ajusta el espaciado entre líneas */
+}
+
+.intro__hola {
+    color: #000000;
+}
+
+.intro__nombre {
+    color: cyan;
+}
+
+.aboutMe__box {
+    background-color: #192130;
+    padding: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.aboutMe__box img {
+    width: 300px;
+ 
+}
+
+.aboutMe__text {
+    width: 500px;
+}
+
+.aboutMe__text h1 {
+    color: white;
+    font-size: 52px !important;
+}
+
+.aboutMe__text p {
+    color: rgba(158, 158, 158, 0.792);
+    max-width: 500px;
+
+}
+
+
+
+@media (max-width:960px) {
+    .intro__box {
+        background-color: #13171C;
+        display: flex;
+        flex-direction: column;
+        margin: 0px !important;
+        align-items: center;
+    }
+
+
+    .intro__imgBox {
+        margin: 0px;
+        width: 300px;
+        
+
+    }
+
+    .aboutMe__box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutMe__text {
+        color: rgba(158, 158, 158, 0.792);
+        max-width: 300px;
+        
+    
+    }
+
+    .aboutMe__box img {
+        margin-top: 30px;
+        
+     
+    }
+    
+
+
+}
+
+
+@keyframes floating {
+    0% {
+        transform: translateY(0); /* Posición original */
+    }
+    50% {
+        transform: translateY(-10px); /* Mover hacia arriba */
+    }
+    100% {
+        transform: translateY(0); /* Regresar a la posición original */
+    }
+}
+
+.rocket-img {
+    animation: floating 2s ease-in-out infinite; /* Aplica la animación de forma infinita */
+}
+
+.cursor {
+    display: inline-block;
+    opacity: 1; /* Visible por defecto */
+    animation: blink 1s step-end infinite; /* Parpadeo continuo */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.aboutMe__text {
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease-in-out; /* Transición suave */
+}
+
+.aboutMe__text.visible {
+    opacity: 1; /* Visible cuando se aplica la clase */
+}

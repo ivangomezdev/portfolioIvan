@@ -1,0 +1,70 @@
+.portfolio__intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+.portfolio__intro h1 {
+    font-size: 60px;
+
+}
+
+.img {
+    width: 300px
+}
+
+.intro__hola {
+    color: white !important;
+
+}
+
+
+.portfolio__cont {
+    background-color: #13171C !important;
+    margin: 0;
+
+}
+
+.portfolio__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 80px;
+    justify-items: center;
+
+
+    background-image: url('../src/bg2.png');
+    background-color: #13171C;
+
+}
+
+.portfolio__cards p {
+    font-family: "poppins";
+    line-height: 30px;
+}
+
+.portfolio__cards h2 {
+    font-family: "poppins";
+    line-height: 30px;
+    color: #1891c8;
+}
+
+.portfolio__cards img {
+    border-radius: 10px;
+}
+
+
+/* PC */
+
+@media (max-width: 960px) {
+    .portfolio__intro {
+       
+        flex-direction: column;
+        
+    }
+
+    .portfolio__cards {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
